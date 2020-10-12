@@ -1,0 +1,62 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="/layout/layout_main.html">
+
+	<script th:inline="javascript"></script>
+
+          <main layout:fragment="content" class="l_main" role="main">
+               <div class="l_form">
+                <h1>약관동의</h1>
+                <div id="member-signup">
+                    <h3>
+                        <span class="essential">(필수)</span>
+                        GISCOURS 이용약관
+                    </h3>
+                    <textarea class="terms" readonly>[[${termsVo.terms}]]</textarea>
+                    <label>
+                        <input type="checkbox" name="agree1">
+                        동의합니다.
+                    </label>
+                    <h3>
+                        <span class="essential">(필수)</span>
+                        전자금융거래 이용약관
+                    </h3>
+                    <textarea class="financial" readonly>[[${termsVo.finance}]]</textarea>
+                    <label>
+                        <input type="checkbox" name="agree2">
+                        동의합니다.
+                    </label>
+                    <h3>
+                        <span class="essential">(필수)</span>
+                        개인정보 수집동의
+                    </h3>
+                    <textarea class="privacy" readonly>[[${termsVo.privacy}]]</textarea>
+                    <label>
+                        <input type="checkbox" name="agree3">
+                        동의합니다.
+                    </label>
+                    <section>
+                        <h3>
+                            <span class="optional">(선택)</span>
+                            위치정보 이용약관
+                        </h3>
+                        <textarea class="location" readonly>[[${termsVo.location}]]</textarea>
+                        <label>
+                            <input type="checkbox" name="agree4">
+                            동의합니다.
+                        </label>
+                    </section>
+                    
+                    <div>
+                        <a th:href="@{/member/register}" id="agree"><input type="button" class="agree" value="동의하기" ></a>
+                        
+                    </div>
+                   
+                </div>
+               </div>
+            </main>
+            
+
+            <!--Ǫ�� ����-->
+    
+</html>

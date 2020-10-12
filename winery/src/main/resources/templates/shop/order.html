@@ -1,0 +1,133 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="/layout/layout_shop.html">
+
+            <!--메인 영역-->
+            <main layout:fragment="content" class="l_main" role="main">
+                <section class="banner">
+                    <div class="l_container">
+                        <div class="c_banner_inner">
+                            <h1 class="o_heading"></h1>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact_us">
+                    <div class="l_container">
+                        <div class="o_grid">
+                            <div>
+                                <h2 class="o_title">
+                                    Shipping Address
+                                </h2>
+                               
+                                <div>
+                                    <form class="con" action="#">
+                                        <div class="form_g">
+                                            <label for="FistName" class="f_label">
+                                                <span>Fisrt Name *</span>
+                                            </label>
+                                            <input id="Firstname" class="form_con" type="text" placeholder="First Name *" required>
+                                        </div>
+
+                                        <div class="form_g">
+                                            <label for="LastName" class="f_label">
+                                                <span>Last Name *</span>
+                                            </label>
+                                            <input id="Lastname" class="form_con" type="text" placeholder="Last Name *" required>
+                                        </div>
+
+  
+                                        <div class="form_g">
+                                            <label for="address" class="f_label">
+                                                <span>Address *</span>
+                                            </label>
+                                            <input id="address" class="form_con" type="text" placeholder="Address *" required>
+                                        </div>
+
+                                        <div class="form_g">
+                                            <label for="address" class="f_label">
+                                                <span>Address2 *</span>
+                                            </label>
+                                            <input id="address" class="form_con" type="text" placeholder="Address2 *" required>
+                                        </div>
+
+                                        <div class="form_g">
+                                            <label for="zipcode" class="f_label">
+                                                <span>Postcode *</span>
+                                            </label>
+                                            <input id="postcode" class="form_con" type="text" placeholder="Postcode *" required>
+                                        </div>
+
+                                        <div class="form_g">
+                                            <label for="Email" class="f_label">
+                                                <span>Email *</span>
+                                            </label>
+                                            <input id="Emain" class="form_con" type="text" placeholder="Email *" required>
+                                        </div>
+
+                                        <div class="form_g">
+                                            <label for="FistName" class="f_label">
+                                                <span>Phone *</span>
+                                            </label>
+                                            <input id="phone" class="form_con" type="text" placeholder="Phone *" required>
+                                        </div>
+                                        <div class="form_g">
+                                            <label for="instruction" class="f_label">
+                                                <span>Delivery Instructions</span>
+                                            </label>
+                                            <input id="instruction" class="form_con" type="text" placeholder="" required>
+                                        </div>
+                                         <div>
+                                             
+                                        <button class="t_button">
+                                           <input type="hidden"> 
+                                            Continue to Payment
+                                        </button> 
+                                         </div> 
+                                        
+
+
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="c_header">
+                                
+                                <section class="side_box">
+                                    <div class="box">
+                                        
+                                        <h3 class="heading3">Order Summary</h3>
+                                       
+                                        <table class="o_table">
+                                          <tr class="o_count">
+                                              <td>Wine Subtotal</td>
+                                              <td>1</td>
+                                          </tr>
+                                          <tr class="o_tax">
+                                              <td>All prices are inclusive of GST</td>
+                                          </tr>
+                                          <tr class="o_price">
+                                              <td>Order Total</td>
+                                              <td>$100</td>
+                                          </tr>
+                                        </table>
+                                        
+                                       
+                                    </div>
+
+
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                
+               
+            
+            </main>
+
+            <!--푸터 영역-->
+       
+</html>

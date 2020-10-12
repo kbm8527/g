@@ -1,0 +1,138 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="/layout/layout_main.html">
+
+
+            <!--메인 영역-->
+            <main layout:fragment="content" class="main">
+                <section class="home_banner" > 
+                    <div class="container">
+                        <div class="home_banner_inner">
+                            <h2>Welcome To</h2> <br>
+                            <h2>GISCOURS Tour</h2>
+                        </div>
+                    </div>
+                </section>
+
+                <!--best banner-->
+               
+                <div class="best_k">
+                    <div class="container">
+                        <div class="best_k_header">
+                                    <h1>GISCOURS Tours : #1 Tour Company</h1>
+                        </div>
+                        <div class="grid">
+                            <div class="best_title">
+                                <div class="title_icon">
+                                    <span class="icon_wrapper">
+                                        <i class="fas fa-users"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="subtitle">
+                                        <b>Small Groups</b>
+                                    </div>
+                                    With a maximum of 10poeple,
+                                </div>   
+                            </div>
+                            <div class="best_title">
+                                <div class="title_icon">
+                                    <span class="">
+                                        <i class="fas fa-users"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="subtitle">
+                                        <b>Small Groups</b>
+                                    </div>
+                                    With a maximum of 10poeple,
+                                </div>
+                            </div>
+                            <div class="best_title">
+                                <div class="title_icon">
+                                    <span class="">
+                                        <i class="fas fa-users"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="subtitle">
+                                        <b>Small Groups</b>
+                                    </div>
+                                    With a maximum of 10poeple,
+                                </div>
+                            </div>
+                            <div class="best_title">
+                                <div class="title_icon">
+                                    <span class="">
+                                        <i class="fas fa-users"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="subtitle">
+                                        <b>Small Groups</b>
+                                    </div>
+                                    With a maximum of 10poeple,
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="tcate">
+                    <ul class="tcate_list">
+                        <li class="tcate_item">
+                            <a class="tcate_link" th:href="@{/shop/list}" style="background-image: url('img/half.png');">
+                                <div class="tcate_link_head">
+                                    <div class="tcate_link-icon">
+                                        <i class="fas fa-wine-bottle"></i>
+                                    </div>
+                                    <h2 class="chead">
+                                        Half-Day <br>
+                                        Tour
+                                    </h2>
+                                </div>
+                                <p>
+                                    View our great range of New Zealand Tours.
+                                </p>
+                                <div class="tcate_link-overlay" style="background-color:rgb(68,120,100);"></div>
+                            </a>
+                        </li>
+                        <li class="tcate_item">
+                            <a class="tcate_link" href="#" style="background-image: url('img/full.png');">
+                                <div class="tcate_link_head">
+                                    <div class="tcate_link-icon">
+                                        <i class="fas fa-wine-bottle"></i>
+                                    </div>
+                                    <h2 class="chead">
+                                        Full-Day <br>
+                                        Tour
+                                    </h2>
+                                </div>
+                                <p>
+                                    View our great range of New Zealand Tours.
+                                </p>
+                                <div class="tcate_link-overlay" style="background-color:rgb(68,120,100);"></div>
+                            </a>
+                        </li>
+                        <li class="tcate_item">
+                            <a class="tcate_link" href="#" style="background-image:url('img/private.png');">
+                                <div class="tcate_link_head">
+                                    <div class="tcate_link-icon">
+                                        <i class="fas fa-wine-bottle"></i>
+                                    </div>
+                                    <h2 class="chead">
+                                        Private <br>
+                                        Tour
+                                    </h2>
+                                </div>
+                                <p>
+                                    View our great range of New Zealand Tours.
+                                </p>
+                                <div class="tcate_link-overlay" style="background-color:rgb(68,120,100);"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                   
+            </main>
+				<!-- 푸터 영역 -->
+</html>

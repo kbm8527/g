@@ -1,0 +1,49 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="/layout/layout_main.html">
+
+            <!--메인 영역-->
+            <main layout:fragment="content" class="l_main" role="main">
+                <div class="l_form">
+                    <div class="l_container"> 
+                        <div class="l_form_header">
+                            <h1 class="heading">Sign In</h1>
+                            <p></p>
+                        </div>
+                        <div class="l_wrapper">
+                            <form action="#">
+                                <ul class="l_form_error"></ul>
+                                <div class="f_content">
+                                    <div class="l_form_g">
+                                        <label class="l_user" >
+                                            <span>Id</span>
+                                        </label>
+                                        <input type="text" name="id" class="user_c" placeholder="id" required>
+                                    </div>
+                                    <div class="l_form_g">
+                                        <label class="l_user">
+                                            <span>password</span>
+                                        </label>
+                                        <input type="password" name="pass" class="user_c" placeholder="password" required>
+                                    </div>
+                                    <div class="f_action">
+                                        <button class="l_button" type="submit">로그인</button>
+                                        <a class="pass_lost" href="#">
+                                            forgot your password?
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <h3>Don't have an account?</h3>
+                            <button type="button" onclick="location.href='register.html'" class="c_button">Create a new account</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+
+            <!--푸터 영역-->
+   
+</html>
